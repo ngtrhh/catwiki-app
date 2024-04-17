@@ -1,0 +1,63 @@
+.top-search {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+
+      img {
+        height: auto;
+        width: 20%;
+        border-radius: 24px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .name {
+          font-size: 28px;
+          font-weight: 600;
+        }
+
+        .description {
+          line-height: 21.94px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .top-search {
+    gap: 10px;
+
+    .grid .row {
+      gap: 20px;
+
+      img {
+        height: fit-content;
+        border-radius: 12px;
+        width: 32%;
+      }
+
+      .content {
+        gap: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.logo {
+  width: fit-content;
+
+  &.white {
+    filter: brightness(0) invert(1);
+  }
+
+  &.large {
+    height: 88px;
+  }
+}

@@ -1,0 +1,37 @@
+@import "./components/";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  color: #291507;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  width: 62%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 172px;
+}
+
+@media only screen and (max-width: 740px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 120px;
+  }
+}
